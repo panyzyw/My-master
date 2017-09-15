@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical">
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_exit"
+        android:onClick="back"/>
+    
+        <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_log"
+        android:onClick="queryLog"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+			<Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_module1"
+            android:onClick="onStartChat1"/>
+			
+			<Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_module2"
+            android:onClick="onStartMusic1"/>			
+            
+        </LinearLayout>
+
+		<Button
+		    android:id="@+id/button3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		     android:onClick="onStartChat2"
+		    android:text="@string/main_module3" />
+        
+		<Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_sub"
+            android:onClick="onStartNotifaication"/>
+
+</LinearLayout>

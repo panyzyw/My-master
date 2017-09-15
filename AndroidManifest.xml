@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yongyida.robot.voice.master1"
+    android:versionCode="1"
+    android:versionName="2.0.9">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="com.yongyidarobot.voice.permission" />
+
+    <!-- 科大讯飞所需基本权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 科大讯飞所需基本权限 -->
+
+
+    <!-- contron camera hardware -->
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- contron camera hardware -->
+
+
+    <!-- 摄相头权限，拍照需要用到 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 摄相头权限，拍照需要用到 -->
+
+
+    <!-- dyc001_map -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <!-- dyc004_battery -->
+
+
+    <!-- lm002_endcall -->
+    <!-- 连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 外部存储卡写入权限，构建语法需要此权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 摄像机权限，拍照需要用到 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 添加可以向外拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 添加获得去电的权限 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <!-- 获取系统声音的权限 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 添加获得来电的权限 -->
+    <uses-permission android:name="android.permission.PROCESS_INCOMING_CALLS" />
+    <!-- 获取网络变化的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取开机广播的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 管理蓝牙设备的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 使用蓝牙设备的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- lm002_endcall -->
+
+
+    <!-- 定位 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.BIND_CONNECTION_SERVICE" />
+    <uses-permission android:name="android.permission.BIND_INCALL_SERVICE" />
+    <uses-permission android:name="android.permission.BROADCAST_CALLLOG_INFO" />
+
+    <application
+        android:name="com.yongyida.robot.voice.master.application.MasterApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <service android:name="com.amap.api.location.APSService" />
+
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="&apos;56065ce8&apos;" />
+        <meta-data
+            android:name="IFLYTEK_CHANNEL"
+            android:value="Android_Demo" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="226f324165d79b9f03ac6842fa825c86" />
+
+        <!--
+             <activity
+            android:name="com.yongyida.robot.voice.master.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.yongyida.robot.voice.master.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.yongyida.robot.voice.master.activity.DistanceActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.yongyida.robot.voice.master.activity.RouteActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.yongyida.robot.voice.master.activity.NetLocationActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.yongyida.robot.voice.master.activity.SpecialActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.yongyida.robot.voice.master.activity.LocationActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="com.yongyida.robot.voice.master.activity.QueryLogActivity" />
+        <activity
+            android:name="com.yongyida.robot.voice.master.activity.BaiduActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <service android:name="com.yongyida.robot.voice.master.service.VoiceSubService" />
+        <service android:name="com.yongyida.robot.voice.master.service.RunVoiceService" />
+        <service android:name="com.yongyida.robot.voice.master.dance.DanceServer">
+            <intent-filter >
+                <action android:name="com.yongyida.robot.voice.master.dance.remote"/>
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.yongyida.robot.voice.master.dance.origin"/>
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.yongyida.robot.voice.master.provider.VoiceContentProvider"
+            android:authorities="com.yongyidarobot.voice"
+            android:exported="true"
+            android:multiprocess="true" />
+        
+		<!-- 跳舞开启服务广播，开机后开启跳舞广播 -->
+        <receiver android:name="com.yongyida.robot.voice.master.dance.DanceReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.yongyida.robot.voice.master.reciver.ServiceReceiver">
+            <intent-filter>
+                <action android:name="com.yydrobot.TEST" />
+                <action android:name="com.yydrobot.MUSIC" />
+                <action android:name="com.yydrobot.NEWS" />
+                <action android:name="com.yydrobot.STOCK" />
+                <action android:name="com.yydrobot.WEATHER" />
+                <action android:name="com.yydrobot.JOKE" />
+                <action android:name="com.yydrobot.STORY" />
+                <action android:name="com.yydrobot.CHAT" />
+                <action android:name="com.yydrobot.ENCYCLOPEDIAS" />
+                <action android:name="com.yydrobot.POETRY" />
+                <action android:name="com.yydrobot.POETRY_STUDY" />
+                <action android:name="com.yydrobot.REMIND" />
+                <action android:name="com.yydrobot.TRIP" />
+                <action android:name="com.yydrobot.COSMETOLOGY" />
+                <action android:name="com.yydrobot.GAME" />
+                <action android:name="com.yydrobot.EBOOK" />
+                <action android:name="com.yydrobot.ARITHMETIC" />
+                <action android:name="com.yydrobot.HABIT" />
+                <action android:name="com.yydrobot.CALL" />
+                <action android:name="com.yydrobot.SINOLOGY" />
+                <action android:name="com.yydrobot.STUDY" />
+                <action android:name="com.yydrobot.VIDEO" />
+                <action android:name="com.yydrobot.SCHEDULE" />
+                <action android:name="com.yydrobot.CAMERA" />
+                <action android:name="com.yydrobot.SQUAREDANCE" />
+                <action android:name="com.yydrobot.QUSETION" />
+                <action android:name="com.yydrobot.CANCEL" />
+                <action android:name="com.yydrobot.SHOOT" />
+                <action android:name="com.yydrobot.YYDCHAT" />
+                <action android:name="com.yydrobot.MAP" />
+                <action android:name="com.yydrobot.DANCE" />
+                <action android:name="com.yydrobot.OPERA" />
+                <action android:name="com.yydrobot.HEALTH" />
+                <action android:name="com.yydrobot.COOKBOOK" />
+                <action android:name="com.yydrobot.ACHT_ALL" />
+                <action android:name="com.yydrobot.STOP" />
+                <action android:name="com.yongyida.robot.RECYCLE" />
+                <!--<action android:name="com.yydrobot.SMARTHOME" />-->
+                <action android:name="com.yydrobot.MOVIEINFO" />
+				<action android:name="com.yydrobot.STOPOTHER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yongyida.robot.voice.master.reciver.LogSecretCodeReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+
+                <data
+                    android:host="109000000"
+                    android:scheme="android_secret_code" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yongyida.robot.voice.master.reciver.VoiceReceiver">
+            <intent-filter>
+                <action android:name="123" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yongyida.robot.voice.master.reciver.AllReceiver">
+            <intent-filter>
+                <action android:name="com.yongyida.robot.PARSE_RESULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yongyida.robot.voice.master.reciver.DistanceReceiver">
+            <intent-filter>
+                <action android:name="com.yydrobot.STOP" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yongyida.robot.voice.master.reciver.TelephoneReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.yongyida.robot.MMS_RECEIVED" />
+                <action android:name="com.android.mms.NOTIFICATION_DELETED_ACTION" />
+                <action android:name="com.yongyida.robot.DIALER_OPEN" />
+                <action android:name="com.yongyida.robot.CANCEL_NOTIFY_MISSED_CALLS" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.yongyida.robot.voice.master.reciver.FaceDetectReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.yongyida.robot.face.detect" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

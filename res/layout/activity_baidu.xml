@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.yongyida.robot.voice.master.activity.BaiduActivity" >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    tools:context="com.example.webviewproject.MainActivity" 
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/search_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="28sp"
+    android:padding="15dp"
+    android:textColor="#89f5ff"
+    android:gravity="center"
+    android:visibility="gone"
+    />
+ <LinearLayout
+     android:id="@+id/webview_layout"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
+     android:layout_marginBottom="10dp"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="@drawable/webbackground"
+     android:visibility="gone"
+     >
+     <WebView
+        android:id="@+id/webView"       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_world"
+        android:background="@android:color/transparent"        
+        android:layerType="software"
+        />
+ </LinearLayout>
+    
+
+
+</LinearLayout>
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageButton_back"
+    android:src="@android:drawable/ic_menu_revert"
+    android:layout_gravity="left|bottom" />
+
+</FrameLayout>
